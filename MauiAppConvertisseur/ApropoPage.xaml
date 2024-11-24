@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppConvertisseur.ApropoPage"
+             Title="À propos">
+    <VerticalStackLayout
+        Padding="20" 
+        Spacing="20" 
+        HorizontalOptions="Center">
+       
+        <Image Source="icon.png" HeightRequest="100" WidthRequest="100" />
+
+        <Label Text="EasyConverter" 
+               FontSize="24" 
+               HorizontalOptions="Center" 
+               TextColor="Black" />
+        <Label Text="version 1.0 (2023)" 
+               FontSize="16" 
+               HorizontalOptions="Center" 
+               TextColor="Gray" />
+        <Label Text="Développeur : Alhassane Diallo" 
+               FontSize="16" 
+               HorizontalOptions="Center" 
+               TextColor="Black" />
+    </VerticalStackLayout>
+</ContentPage>
