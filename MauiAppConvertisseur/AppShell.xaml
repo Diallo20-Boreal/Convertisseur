@@ -7,9 +7,11 @@
     Shell.FlyoutBehavior="Disabled"
     Title="MauiAppConvertisseur">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem Title="Convertisseur">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
 
+    <FlyoutItem Title="À propos">
+        <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+    </FlyoutItem>
 </Shell>
