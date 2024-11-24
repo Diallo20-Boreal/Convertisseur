@@ -5,21 +5,23 @@
              Title="À propos">
     <VerticalStackLayout
         Padding="20" 
-        Spacing="20" 
+        Spacing="30.0" 
         HorizontalOptions="Center">
        
-        <Image Source="icon.png" HeightRequest="100" WidthRequest="100" />
+        <Image Source="icone.png" 
+               HeightRequest="100" 
+               WidthRequest="100" />
 
         <Label Text="EasyConverter" 
                FontSize="24" 
                HorizontalOptions="Center" 
                TextColor="Black" />
         <Label Text="version 1.0 (2023)" 
-               FontSize="16" 
+               FontSize="17" 
                HorizontalOptions="Center" 
                TextColor="Gray" />
         <Label Text="Développeur : Alhassane Diallo" 
-               FontSize="16" 
+               FontSize="17" 
                HorizontalOptions="Center" 
                TextColor="Black" />
     </VerticalStackLayout>

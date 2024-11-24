@@ -1,18 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppConvertisseur.MainPage"
              Title="Convertisseur">
 
     <ScrollView>
-        <VerticalStackLayout
+        <VerticalStackLayout>
 
-            <Image Source="icon.png" 
+            <Image Source="icone.png" 
                    HorizontalOptions="Center" 
                    HeightRequest="100" 
                    WidthRequest="100" />
 
-            <!-- Bienvenue et Description -->
             <Label Text="Bienvenue au EasyConverter" 
                    FontSize="24" 
                    HorizontalOptions="Center" 
@@ -28,15 +26,17 @@
             <Grid RowDefinitions="Auto,Auto"
                   ColumnDefinitions="*,Auto,*" 
                   Margin="20">
-                <Entry Grid.Row="0" Grid.Column="0" 
-                       Placeholder="Tapez °C" 
-                       Keyboard="Numeric" 
-                       x:Name="celsiusEntry" />
+                <Entry  
+                    x:Name="celsiusEntry"
+                    Grid.Row="0" 
+                    Grid.Column="0"
+                    Placeholder="Tapez °C"
+                    Keyboard="Numeric"/>
 
-                <ImageButton Grid.Row="0" Grid.Column="1" 
-                             Source="convert_icon.png" 
-                             HeightRequest="40" 
-                             WidthRequest="40"
+                <ImageButton Grid.Row="0" Grid.Column="1"  
+                             Source="fleche.png"
+                             HeightRequest="10" 
+                             WidthRequest="10"
                              Clicked="OnCelsiusToFahrenheit" />
 
                 <Label Grid.Row="0" Grid.Column="2" 
@@ -50,9 +50,9 @@
                        x:Name="fahrenheitEntry" />
 
                 <ImageButton Grid.Row="1" Grid.Column="1" 
-                             Source="convert_icon.png" 
-                             HeightRequest="40" 
-                             WidthRequest="40"
+                             Source="fleche.png"
+                             HeightRequest="10" 
+                             WidthRequest="10"
                              Clicked="OnFahrenheitToCelsius" />
 
                 <Label Grid.Row="1" Grid.Column="2" 

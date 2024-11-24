@@ -6,7 +6,6 @@
         {
             InitializeComponent();
         }
-
         private void OnCelsiusToFahrenheit(object sender, EventArgs e)
         {
             if (double.TryParse(celsiusEntry.Text, out double celsius))
@@ -19,7 +18,6 @@
                 DisplayAlert("Erreur", "Veuillez entrer une valeur valide pour °C.", "OK");
             }
         }
-
         private void OnFahrenheitToCelsius(object sender, EventArgs e)
         {
             if (double.TryParse(fahrenheitEntry.Text, out double fahrenheit))
