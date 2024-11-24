@@ -7,7 +7,9 @@
     Shell.FlyoutBehavior="Flyout"
     Title="MauiAppConvertisseur">
 
-    <FlyoutItem Title="Convertisseur" Icon="icone">
+    <FlyoutItem Title="Convertisseur" 
+                Icon="icone">
+        
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 

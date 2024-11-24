@@ -15,7 +15,7 @@
             }
             else
             {
-                DisplayAlert("Erreur", "Veuillez entrer une valeur valide pour °C.", "OK");
+                DisplayAlert("Erreur", "Veuillez entrer une valeur correct pour °C.", "OK");
             }
         }
         private void OnFahrenheitToCelsius(object sender, EventArgs e)
@@ -27,7 +27,7 @@
             }
             else
             {
-                DisplayAlert("Erreur", "Veuillez entrer une valeur valide pour °F.", "OK");
+                DisplayAlert("Erreur", "Veuillez entrer une valeur correct pour °F.", "OK");
             }
         }
 
